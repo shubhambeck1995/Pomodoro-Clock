@@ -1,0 +1,24 @@
+//output:index.html
+html
+  head
+    link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+    link(rel="stylesheet", href="css/style.css")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src="script.js")
+    
+  body
+    .container
+      .main
+        .row1.row
+          .item.item1 Break Length
+          .item.item2 Session Length
+        .row2.row
+          .item
+            .item-33#inc-break +
+            .item-33#break-length 5
+            .item-33#dec-break -
+          .item
+            .item-33#inc-session +
+            .item-33#session-length 25
+            .item-33#dec-session -
+      .timer#time-left 25:00

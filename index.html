@@ -1,46 +1,32 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Pomodoro clock</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
-  
-</head>
-
-<body>
-  
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
-</head>
-<body>
-  <div class="container">
-    <div class="main">
-      <div class="row1 row">
-        <div class="item item1">Break Length</div>
-        <div class="item item2">Session Length</div>
-      </div>
-      <div class="row2 row">
-        <div class="item">
-          <div class="item-33" id="inc-break">+</div>
-          <div class="item-33" id="break-length">5</div>
-          <div class="item-33" id="dec-break">-</div>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="row1 row">
+          <div class="item item1">Break Length</div>
+          <div class="item item2">Session Length</div>
         </div>
-        <div class="item">
-          <div class="item-33" id="inc-session">+</div>
-          <div class="item-33" id="session-length">25</div>
-          <div class="item-33" id="dec-session">-</div>
+        <div class="row2 row">
+          <div class="item">
+            <div id="inc-break" class="item-33">+</div>
+            <div id="break-length" class="item-33">5</div>
+            <div id="dec-break" class="item-33">-</div>
+          </div>
+          <div class="item">
+            <div id="inc-session" class="item-33">+</div>
+            <div id="session-length" class="item-33">25</div>
+            <div id="dec-session" class="item-33">-</div>
+          </div>
         </div>
       </div>
+      <div id="time-left" class="timer">25:00</div>
     </div>
-    <div class="timer" id="time-left">25:00</div>
-  </div>
-</body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-
-  
-</body>
+  </body>
 </html>
