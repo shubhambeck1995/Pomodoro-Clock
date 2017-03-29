@@ -37,7 +37,7 @@ if(isRunning){
         var current = "work";
         var time = sessionMinutes;
 
-        intervalFunction = setInterval(startTimer, 100);
+        intervalFunction = setInterval(startTimer, 1000);
 
         function startTimer() {
 
