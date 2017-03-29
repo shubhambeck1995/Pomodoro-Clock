@@ -3,31 +3,75 @@
 body
   background: #C9F0F1
   font-family: "Raleway","sans-serif"
+
   // color: white
 .container
-  width: 300px
+  width: 600px
   margin: 0 auto
   background: linear-gradient(to right, #79D1C9, #499BC1)
-  height: 500px
+  height: 600px
   padding: 30px
-  border: 1px solid green
 
   // border: 1px solid white
 .text-center
   text-align: center
+  // styling buttons
+a
+  text-decoration: none
+  font-weight: bold
+  color: black
+
+button
+  background: none
+  border: none
+  padding: 20px
+  margin: 5px
+  color: white
+  &:active
+    outline: none
+  &:hover
+    background: #C9F0F1
+    cursor: pointer
+    animation: effect 300ms linear forwards
+@keyframes effect
+  from
+    transform: scale(1)
+  to
+    transform: scale(1.1)
+#start
+  background: rgb(97, 218, 160)
+  &:hover
+
+#stop
+  background: rgb(228, 107, 107)
+  // end styling buttons
 
 // ...start main items
 .row
+  margin-top: 20px
   display: flex
   justify-content: center
-.item
-  width: 50%
+  width: 100%
   text-align: center
-  border: 1px solid white
-  display: flex
+  justify-content: space-between
+.item
+  width: 40%
+  text-align: center
+  // border: 1px solid white
+  // display: flex
 .item-33
-  width: 33%
+  width: 60px
+  height: 60px
+  line-height: 50px
   border: 1px solid
+  border-radius: 50%
+  display: inline-block
+  font-size: 25px
+  &:nth-child(even)
+    border: none
+  &:nth-child(even):hover
+    color: white
+    cursor: pointer
 .timer
   height: 250px
   width: 250px
@@ -35,6 +79,16 @@ body
   border: 10px solid white
   border-radius: 50%
   margin-top: 40px
-  line-height: 250px
+  // background: pink
+  line-height: 63px
   text-align: center
-  font-size: 40px
+  font-size: 45px
+  padding: 40px
+  // &:hover
+
+.control
+  width: 250px
+  margin: 10px auto
+  // display: inline-block
+  // border: 2px solid
+  text-align: center

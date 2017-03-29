@@ -1,24 +1,40 @@
 //output:index.html
 html
-  head
-    link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
-    link(rel="stylesheet", href="sass/style.css")
-    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
-    script(src="script.js")
-    
-  body
-    .container
-      .main
-        .row1.row
-          .item.item1 Break Length
-          .item.item2 Session Length
-        .row2.row
-          .item
-            .item-33#inc-break +
-            .item-33#break-length 5
-            .item-33#dec-break -
-          .item
-            .item-33#inc-session +
-            .item-33#session-length 25
-            .item-33#dec-session -
-      .timer#time-left 25:00
+    head
+        title Pomodoro Clock by Shubham Beck
+        link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+        link(rel="stylesheet", href="sass/style.css")
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src="script.js")
+
+    body
+        h1.text-center Pomodoro Clock
+        .container
+            .main
+                .row
+                    .item
+                        h3  Break Length
+                        .item-33#inc-break +
+                        .item-33#break-length 5
+                        .item-33#dec-break -
+                    .item
+                        h3 Session Length
+                        .item-33#inc-session +
+                        .item-33#session-length 25
+                        .item-33#dec-session -
+                br
+                br
+                hr
+
+
+            .timer
+                #status Work
+                #time-left 25:00
+            .control
+                button#start  START
+                button.stop#stop RESET
+        hr
+        .footer.text-center
+            p Developed by 
+              span.bold
+                a(href="https://github.com/shubhambeck1995/" target="blank") Shubham Beck.

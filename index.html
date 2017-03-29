@@ -1,32 +1,44 @@
 
 <html>
   <head>
+    <title>Pomodoro Clock by Shubham Beck</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
     <link rel="stylesheet" href="sass/style.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </head>
   <body>
+    <h1 class="text-center">Pomodoro Clock</h1>
     <div class="container">
       <div class="main">
-        <div class="row1 row">
-          <div class="item item1">Break Length</div>
-          <div class="item item2">Session Length</div>
-        </div>
-        <div class="row2 row">
+        <div class="row">
           <div class="item">
+            <h3> Break Length</h3>
             <div id="inc-break" class="item-33">+</div>
             <div id="break-length" class="item-33">5</div>
             <div id="dec-break" class="item-33">-</div>
           </div>
           <div class="item">
+            <h3>Session Length</h3>
             <div id="inc-session" class="item-33">+</div>
             <div id="session-length" class="item-33">25</div>
             <div id="dec-session" class="item-33">-</div>
           </div>
-        </div>
+        </div><br/><br/>
+        <hr/>
       </div>
-      <div id="time-left" class="timer">25:00</div>
+      <div class="timer">
+        <div id="status">Work</div>
+        <div id="time-left">25:00</div>
+      </div>
+      <div class="control">
+        <button id="start"> START</button>
+        <button id="stop" class="stop">RESET</button>
+      </div>
+    </div>
+    <hr/>
+    <div class="footer text-center">
+      <p>Developed by <span class="bold"><a href="https://github.com/shubhambeck1995/" target="blank">Shubham Beck.</a></span></p>
     </div>
   </body>
 </html>

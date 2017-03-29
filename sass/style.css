@@ -6,29 +6,69 @@ body {
   font-family: "Raleway", "sans-serif"; }
 
 .container {
-  width: 300px;
+  width: 600px;
   margin: 0 auto;
   background: linear-gradient(to right, #79D1C9, #499BC1);
-  height: 500px;
-  padding: 30px;
-  border: 1px solid green; }
+  height: 600px;
+  padding: 30px; }
 
 .text-center {
   text-align: center; }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black; }
+
+button {
+  background: none;
+  border: none;
+  padding: 20px;
+  margin: 5px;
+  color: white; }
+  button:active {
+    outline: none; }
+  button:hover {
+    background: #C9F0F1;
+    cursor: pointer;
+    animation: effect 300ms linear forwards; }
+
+@keyframes effect {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+#start {
+  background: #61daa0; }
+
+#stop {
+  background: #e46b6b; }
+
 .row {
+  margin-top: 20px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between; }
 
 .item {
-  width: 50%;
-  text-align: center;
-  border: 1px solid white;
-  display: flex; }
+  width: 40%;
+  text-align: center; }
 
 .item-33 {
-  width: 33%;
-  border: 1px solid; }
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 25px; }
+  .item-33:nth-child(even) {
+    border: none; }
+  .item-33:nth-child(even):hover {
+    color: white;
+    cursor: pointer; }
 
 .timer {
   height: 250px;
@@ -37,8 +77,14 @@ body {
   border: 10px solid white;
   border-radius: 50%;
   margin-top: 40px;
-  line-height: 250px;
+  line-height: 63px;
   text-align: center;
-  font-size: 40px; }
+  font-size: 45px;
+  padding: 40px; }
+
+.control {
+  width: 250px;
+  margin: 10px auto;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
